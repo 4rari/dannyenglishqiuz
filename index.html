@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Word Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>English Word Quiz</h1>
+        <div id="difficulty-selection">
+            <button onclick="startQuiz('easy')">Easy</button>
+            <button onclick="startQuiz('medium')">Medium</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+        </div>
+        <div id="quiz-container" style="display:none;">
+            <p id="question"></p>
+            <div id="options"></div>
+            <p id="feedback" style="display:none;"></p>
+            <button id="next-button" onclick="nextQuestion()" style="display:none;">Next</button>
+        </div>
+        <div id="result" style="display:none;">
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
